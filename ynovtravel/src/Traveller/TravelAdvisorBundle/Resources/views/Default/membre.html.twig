@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+{% for contnom in v_nom %}
+          <tr class="0" style="">
+            <span>
+              <td style="text-align:left;">
+                {{ contnom }}
+              </td>
+            </span>
+          </tr>
+        {% endfor %}
+{% endblock %}

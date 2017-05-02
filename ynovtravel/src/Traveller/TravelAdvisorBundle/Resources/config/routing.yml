@@ -1,0 +1,23 @@
+travel_advisor_homepage:
+    path:     /
+    defaults: { _controller: TravelAdvisorBundle:Default:index }
+
+travel_advisor_voyage:
+    path:     /voyage
+    defaults: { _controller: TravelAdvisorBundle:Default:voyage }
+
+travel_advisor_voyage_prenom:
+    path:     /voyage/{votrePrenom}
+    defaults: { _controller: TravelAdvisorBundle:Default:voyageprenom }
+
+travel_advisor_voyage_admin:
+    path:     /admin/redirection
+    defaults: { _controller: TravelAdvisorBundle:Admin:redirecte }
+
+_redirect:
+    path:     /voyage/visiteur
+    defaults: { _controller: TravelAdvisorBundle:Default:voyageprenom }
+
+_membre:
+    path:     /afficherMembre/{id}
+    defaults: { _controller: TravelAdvisorBundle:Membre:view }
